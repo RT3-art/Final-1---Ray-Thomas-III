@@ -48,7 +48,7 @@
     font-family: "Gill Sans";
     font-size: 30px;
     height: 50px;
-    width: 250px;
+    width: 350px;
     border-radius: 10px;
     margin: auto;
     display: flex;
@@ -65,7 +65,7 @@
     font-family: "Gill Sans";
     font-size: 30px;
     height: 50px;
-    width: 250px;
+    width: 350px;
     border-radius: 10px;
     margin: auto;
     display: flex;
@@ -177,13 +177,23 @@
   
   const lookup = [
     //text: { resp1, resp2, greeting }
-    {key: "Hi", resp1: "I'm good!", resp2: "Not so great..", greeting: "How are you?", mouth: "⏝"},
+    {key: "Hi", resp1: "I'm good!", resp2: "Not so great...", greeting: "How are you?", mouth: "⏝"},
     {key: "Bye", resp1: "Wait come back!!", resp2: "...", greeting: "...", mouth: "_"},
     {key: "Wait come back!!", resp1: "Hi", resp2: "Bye", greeting: "Hello", mouth: "⏝"},
     {key: "...", resp1: "Yes", resp2: "No", greeting: "Do you want to try again?", mouth: "_"},
     {key: "Yes", resp1: "Hi", resp2: "Bye", greeting: "Hello", mouth: "⏝"},
-    {key: "No", resp1: "Wait come back!!", resp2: "...", greeting: "...", mouth: "_"}, 
-  ]
+    {key: "No", resp1: "Wait come back!!", resp2: "...", greeting: "...", mouth: "_"},
+    {key: "Not so great...", resp1: "I lost my sock...", resp2:"Don't wanna talk about it", greeting:"Something bothering you?", mouth: "_"},
+    {key: "I lost my sock...", resp1: "There it is!", resp2:"Not there...", greeting:"Did you check your foot?", mouth: "_"},
+    {key: "Not there...", resp1: "There it is!", resp2:"Nope...", greeting:"Did you check the fridge?", mouth: "_"},
+    {key: "Nope...", resp1: "There it is!", resp2:"Nuh-uh...", greeting:"Did you check the fish bowl?", mouth: "_"},
+    {key: "Nuh-uh...", resp1: "There it is!", resp2:"Isn't there...", greeting:"Did you check your other foot?", mouth: "_"},
+    {key: "Isn't there...", resp1: "There it is!", resp2:"Don't see it...", greeting:"Did you check the sock drawer?", mouth: "_"},
+    {key: "Don't see it...", resp1: "There it is!", resp2:"Not there...", greeting:"Did you check your foot?", mouth: "_"},
+    {key: "There it is!", resp1: "Yippee!", resp2:"Oh wait no I didn't", greeting:"Always the last place you'd expect!", mouth: "⏝"},
+    {key: "Oh wait no I didn't", resp1: "Yeah...", resp2: "Just kidding!", greeting: "Oh...", mouth: "_"},
+    {key: "Yeah...", resp1: "There it is!", resp2:"Not there...", greeting:"Did you check your foot?", mouth: "_"},
+    ]
 
   const update = (text) =>
   {
