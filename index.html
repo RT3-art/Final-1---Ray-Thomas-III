@@ -184,7 +184,8 @@
     {key: "Yes", resp1: "Hi", resp2: "Bye", greeting: "Hello", mouth: "⏝"},
     {key: "No", resp1: "Wait come back!!", resp2: "...", greeting: "...", mouth: "_"},
     {key: "Not so great...", resp1: "I lost my sock...", resp2:"Don't wanna talk about it", greeting:"Something bothering you?", mouth: "_"},
-    {key: "I lost my sock...", resp1: "There it is!", resp2:"Not there...", greeting:"Did you check your foot?", mouth: "_"},
+    {key: "I lost my sock...", resp1: "I've looked everywhere!", resp2:"Oh dear is right!", greeting:"Oh dear!", mouth: "_"},
+    {key: "I've looked everywhere!", resp1: "There it is!", resp2:"Not there...", greeting:"Did you check your foot?", mouth: "_"},
     {key: "Not there...", resp1: "There it is!", resp2:"Nope...", greeting:"Did you check the fridge?", mouth: "_"},
     {key: "Nope...", resp1: "There it is!", resp2:"Nuh-uh...", greeting:"Did you check the fish bowl?", mouth: "_"},
     {key: "Nuh-uh...", resp1: "There it is!", resp2:"Isn't there...", greeting:"Did you check your other foot?", mouth: "_"},
@@ -205,6 +206,7 @@
     {key: "Yay!", resp1: "Oh?", greeting: "One small problem though...", mouth: "_"},
     {key: "Oh?", resp1: "Darn!", resp2: "Then make some!", greeting: "I don't have hands!", mouth: "_"},
     {key: "Darn!", resp1: "Tell me!", resp2: "Nevermind...", greeting: "I can tell you how to make one!", mouth: "⏝"},
+    {key: "No wait! Tell me!", resp1: "Bread!", resp2: "I'm not hungry anymore!", greeting: "Grab two slices of bread", mouth: "⏝"},
     {key: "Tell me!", resp1: "Bread!", resp2: "I'm not hungry anymore!", greeting: "Grab two slices of bread", mouth: "⏝"},
     {key: "Bread!", resp1: "Okay?", resp2: "I'm not hungry anymore!", greeting: "The bread is your canvas!", mouth: "⏝"},
     {key: "Okay?", resp1: "Ham!", resp2: "I'm not hungry anymore!", greeting: "Take a piece of ham", mouth: "⏝"},
@@ -218,7 +220,17 @@
     {key: "Wasn't very funny...", resp1: "Bad comedian", resp2: "Sorry", greeting: "Woof... Tough crowd...", mouth: "_"},
     {key: "Dumb face.", resp1: "I like red more!", resp2: "I like purple more!", greeting: "What's wrong with it?", mouth: "_"},
     {key: "Bad comedian", resp1: "Dumb face.", resp2: "Sorry", greeting: "This conversation isn't going very well...", mouth: "_"},
-    {key: "Yippee!", resp1: "Tell me a joke!", resp2: "Make me a sandwich!", greeting: "What do you want to do now?", mouth: "⏝"}
+    {key: "Yippee!", resp1: "Tell me a joke!", resp2: "Make me a sandwich!", greeting: "What do you want to do now?", mouth: "⏝"},
+    {key: "Don't wanna talk about it", resp1: "I'm sure...", resp2: "Well...", greeting: "Are you sure?", mouth: "_"},
+    {key: "Well...", resp1: "I lost my sock...", resp2: "", greeting: "What's troubling you?", mouth: "⏝"},
+    {key: "Oh dear is right!", resp1: "This morning...", resp2: "Five years ago...", greeting: "Where did you see it last?", mouth: "_"},
+    {key: "This morning...", resp1: "On my feet?", resp2: "Ummm...", greeting: "This morning! Where do you usually put your socks?", mouth: "_"},
+    {key: "Five years ago...", resp1: "On my feet?", resp2: "Ummm...", greeting: "Five years! Where do you usually put your socks?", mouth: " ⏠ "},
+    {key: "On my feet?", resp1: "There it is!", resp2: "Not there...", greeting: "Try checking there!", mouth: "⏝"},
+    {key: "Then make some!", resp1: "You're useless then!", resp2: "Rats!", greeting: "Gross! No way!", mouth: " ⏠ "},
+    {key: "Rats!", resp1: "Tell me!", resp2: "That sounds like work...", greeting: "I can tell you how to make one though!", mouth: "_"},
+    {key: "That sounds like work...", resp1: "Maybe I will!", resp2: "No wait! Tell me!", greeting: "I guess you'll starve then.", mouth: "_"},
+    {key: "You're useless then!", resp1: "...", resp2: "Sorry", greeting: "...", mouth: "_"},
     ]
 
   const update = (text) =>
