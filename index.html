@@ -131,6 +131,9 @@
   const button1 = document.querySelector('#hi')
   const button2 = document.querySelector('#bye')
   const greeting = document.querySelector('#greeting')
+  const body = document.querySelector('body')
+  console.log(body.style.background)
+
 
   function leye() {
     lefteye.textContent = ">"
@@ -177,13 +180,13 @@
   
   const lookup = [
     //text: { resp1, resp2, greeting }
-    {key: "Hi", resp1: "I'm good!", resp2: "Not so great...", greeting: "How are you?", mouth: "⏝"},
-    {key: "Bye", resp1: "Wait come back!!", resp2: "...", greeting: "...", mouth: "_"},
+    {key: "Hi", resp1: "I'm good!", resp2: "Not so great...", greeting: "How are you?", mouth: "⏝", background: "green"},
+    {key: "Bye", resp1: "Wait come back!!", resp2: "...", greeting: "...", mouth: "_", background: "red"},
     {key: "You're too ugly", resp1: "Wait come back!!", resp2: "...", greeting: "...", mouth: "_"},
     {key: "You're too simple", resp1: "Wait come back!!", resp2: "...", greeting: "...", mouth: "_"},
     {key: "Wait come back!!", resp1: "Hi", resp2: "Bye", greeting: "Hello", mouth: "⏝"},
     {key: "...", resp1: "Yes", resp2: "No", greeting: "Do you want to try again?", mouth: "_"},
-    {key: "Yes", resp1: "Hi", resp2: "Bye", greeting: "Hello", mouth: "⏝"},
+    {key: "Yes", resp1: "Hi", resp2: "Bye", greeting: "Hello", mouth: "⏝", background: "teal"},
     {key: "No", resp1: "Wait come back!!", resp2: "...", greeting: "...", mouth: "_"},
     {key: "Not so great...", resp1: "I lost my sock...", resp2:"Don't wanna talk about it", greeting:"Something bothering you?", mouth: "_"},
     {key: "I lost my sock...", resp1: "I've looked everywhere!", resp2:"Oh dear is right!", greeting:"Oh dear!", mouth: "_"},
@@ -285,6 +288,16 @@
       button2.textContent = current.resp2
       greeting.textContent = current.greeting
       UpdateMouth(current.mouth)
+      
+      if (current.background != null)
+      {
+        body.style.background = current.background
+        lefteye.style.color = current.background
+        righteye.style.color = current.background
+        mouth.style.color = current.background
+        button1.style.color = current.background
+        button2.style.color = current.background
+      }
     }
   }
   button1.addEventListener('click', () => update(button1.textContent))
